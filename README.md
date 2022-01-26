@@ -46,9 +46,6 @@ pip3 install -r requirements.txt
 ### 2. Connect Tello
 Turn on drone and connect computer to its WiFi
 
-<img width="346" alt="wifi_connection" src="https://user-images.githubusercontent.com/13486777/110932822-a7b30f00-8334-11eb-9759-864c3dce652d.png">
-
-
 Next, run the following code to verify connectivity
 
 ```sh
