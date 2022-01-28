@@ -24,7 +24,7 @@ Mediapipe is an amazing ML platform with many robust solutions like Face mesh, H
 
 
 ## Setup
-I would recommend to use a virtual python environment for this projet. 
+I would recommend to use a virtual python environment for this project. 
 
 ### 1. Installing pip packages
 First, we need to install python dependencies. Make sure you that you are using `python3.6` or above.
