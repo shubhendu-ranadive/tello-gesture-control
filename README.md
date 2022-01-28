@@ -24,6 +24,8 @@ Mediapipe is an amazing ML platform with many robust solutions like Face mesh, H
 
 
 ## Setup
+I would recommend to use a virtual python environment for this projet. 
+
 ### 1. Installing pip packages
 First, we need to install python dependencies. Make sure you that you are using `python3.6` or above.
 
@@ -36,11 +38,12 @@ tensorflow == 2.4.1
 mediapipe == 0.8.2
 ```
 
-Install Python3 support from my Github respository first
-[DJITelloPy3](https://github.com/shubhendu-ranadive/DJITelloPy3)
+First install Python3 support from my Github respository [DJITelloPy3](https://github.com/shubhendu-ranadive/DJITelloPy3)
 
 Then install the above list of packages
 ```sh
+git clone https://github.com/shubhendu-ranadive/tello-gesture-control
+cd tello-gesture-control
 pip3 install -r requirements.txt
 ```
 ### 2. Connect Tello
