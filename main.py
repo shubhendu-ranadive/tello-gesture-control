@@ -86,6 +86,7 @@ def main():
         else:
             gesture_controller.gesture_control(gesture_buffer)
 
+    # Not able to use currently due to some problem. Use "tello.get_battery" instead
     def tello_battery(tello):
         global battery_status
         try:
@@ -98,7 +99,7 @@ def main():
 
     mode = 0
     number = -1
-    battery_status = -1
+    #battery_status = -1
 
     while True:
         fps = cv_fps_calc.get()
@@ -143,12 +144,12 @@ def main():
 
         # Start control thread
         threading.Thread(target=tello_control, args=(key, keyboard_controller, gesture_controller,)).start()
-        threading.Thread(target=tello_battery, args=(tello,)).start()
+        #threading.Thread(target=tello_battery, args=(tello,)).start()
 
         debug_image = gesture_detector.draw_info(debug_image, fps, mode, number)
 
         # Battery status and image rendering
-        cv.putText(debug_image, "Battery: {}".format(battery_status), (5, 720 - 5),
+        cv.putText(debug_image, "Battery: {}".format(tello.get_battery()), (5, 720 - 5),
                    cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
         cv.imshow('Tello Gesture Recognition', debug_image)
 
