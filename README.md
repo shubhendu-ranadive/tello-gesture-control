@@ -36,11 +36,10 @@ numpy == 1.19.3
 opencv_python == 4.5.1.48
 tensorflow == 2.4.1
 mediapipe == 0.8.2
+djitellopy
 ```
 
-First install Python3 support from my Github respository [DJITelloPy3](https://github.com/shubhendu-ranadive/DJITelloPy3)
-
-Then install the above list of packages
+Install the above list of packages
 ```sh
 git clone https://github.com/shubhendu-ranadive/tello-gesture-control
 cd tello-gesture-control
