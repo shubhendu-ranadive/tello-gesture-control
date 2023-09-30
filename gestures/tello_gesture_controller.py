@@ -45,5 +45,7 @@ class TelloGestureController:
                 self.forw_back_velocity = self.up_down_velocity = \
                     self.left_right_velocity = self.yaw_velocity = 0
 
-            self.tello.send_rc_control(self.left_right_velocity, self.forw_back_velocity,
-                                       self.up_down_velocity, self.yaw_velocity)
+            self.tello.send_rc_control(self.left_right_velocity,
+                                        self.forw_back_velocity,
+                                        self.up_down_velocity,
+                                        self.yaw_velocity)
